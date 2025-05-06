@@ -1,21 +1,94 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  font-family: sans-serif;
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   color: #333;
 }
-header {
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.logo {
+  height: 40px;
+}
+.nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
 }
-header img {
-  width: 100px;
+.nav li {
+  margin-left: 20px;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 히어로 섹션 */
+.hero {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #D3E2EA;   /* hero.png 배경색과 비슷한 연한 블루 */
+  padding: 60px 0;              /* 위아래 여백 조절 */
+}
+.hero img {
+  width: 33%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
-footer {
-  margin-top: 2rem;
-  font-size: 0.8rem;
-  color: #777;
+.hero-content {
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1a3553;
+  text-shadow: none;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #003366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* 푸터 */
+.footer {
+  background: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 0.5rem;
+}
+/* continue.png 크기 조정(필요 시) */
+.footer .construction {
+  margin-top: 10px;
+  max-width: 150px;
+  height: auto;
 }

@@ -2,42 +2,40 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>Pionman</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo.svg">
-  <meta name="description" content="도전하는 사람, Pionman의 홈페이지입니다.">
+  <title>Pionman - Software &amp; IoT Solutions for Your Business</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 공사중 배너 스타일 -->
-  <style>
-    .banner {
-      background-color: #ffeb3b;
-      color: #333;
-      padding: 0.5rem;
-      text-align: center;
-      font-weight: bold;
-    }
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 공사중 알림 -->
-  <div class="banner">🚧 현재 사이트는 공사중입니다. 곧 멋진 모습으로 찾아뵙겠습니다! 🚧</div>
-
-  <header>
-    <img src="logo.svg" alt="Pionman Logo">
-    <h1>Pionman</h1>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container">
+      <img src="logo.svg" alt="Pionman Logo" class="logo">
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#services" class="disabled">Services</a></li>
+          <li><a href="#contact" class="disabled">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <p>안녕하세요! Pionman은 “pioneer”, 즉 도전하는 사람을 의미합니다.</p>
-    <p>저희는 소프트웨어 개발, 서비스 개발, IoT 및 AI 솔루션을 제공하는 혁신적인 개발 회사입니다.</p>
-  </main>
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div>
+      <img src="hero.png" alt="Software & IoT Solutions for Your Business">
+    </div>
 
-  <footer>
-    <p>주소: 서울특별시 서초구</p>
-    <p>연락처: <a href="mailto:devpion@gmail.com">devpion@gmail.com</a></p>
-    <p>&copy; 2025 Pionman. All Rights Reserved.</p>
+  </section>
+
+  <!-- 푸터 -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>Contact: <a href="mailto:devpion@gmail.com">devpion@gmail.com</a></p>
+      <p>주소: 서울 서초구</p>
+      <img src="continue.png" alt="공사중" class="construction">
+    </div>
   </footer>
 </body>
 </html>
